@@ -17,7 +17,7 @@ This Telegram bot is designed to scrape news websites, parse the content, and se
 
 1. Clone the repository:
    ```bash
-   git clone https://your-repository-link-here
+   git clone https://github.com/YernurSnowy/News_Parser_Bot
    ```
 2. Install the required Python packages:
    ```bash
