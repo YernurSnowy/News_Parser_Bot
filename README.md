@@ -27,6 +27,41 @@ This Telegram bot is designed to scrape news websites, parse the content, and se
 
 4. Replace `YOUR TELEGRAM TOKEN` in `config.py` with your actual Telegram bot token.
 
+## Database Setup
+Execute the following SQL commands to set up the necessary tables in your PostgreSQL database:
+
+```sql
+-- Users table
+CREATE TABLE users (
+    user_id BIGINT PRIMARY KEY,
+    user_name TEXT,
+    notifications BOOLEAN NOT NULL
+);
+
+-- Informburo News table
+CREATE TABLE informburo_news (
+    id SERIAL PRIMARY KEY,
+    title TEXT,
+    photo TEXT,
+    time TEXT,
+    mark TEXT,
+    link TEXT,
+    content TEXT
+);
+
+-- Nur News table
+CREATE TABLE nur_news (
+    id SERIAL PRIMARY KEY,
+    title TEXT,
+    photo TEXT,
+    time TEXT,
+    category TEXT,
+    link TEXT,
+    content TEXT
+);
+```
+
+
 ## Usage
 To start the bot, run the following command:
 ```bash
